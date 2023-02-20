@@ -23,4 +23,19 @@ public class ExerciseTest {
         this.exercise.stepTwo();
         Assertions.assertArrayEquals(shouldBe, this.exercise.numsFiveToTen);
     }
+
+    @Test
+    public void numsEvenShouldContainBetweenZeroAndSix() {
+        int[] shouldBe = {0, 2, 4, 6};
+        this.exercise.stepThree();
+        Assertions.assertArrayEquals(shouldBe, this.exercise.numsEven);
+    }
+
+    @Test
+    public void countdownShouldBeThreeToZero() {
+        int[] shouldBe = {3, 2, 1, 0};
+        this.exercise.stepFour();
+        Assertions.assertArrayEquals(shouldBe, this.exercise.countdown);
+    }
+
 }

@@ -3,7 +3,7 @@ package com.booleanuk;
 public class Exercise {
     int[] numsZeroToThree;
     int[] numsFiveToTen;
-    int[] evenNums;
+    int[] numsEven;
     int[] countdown;
 
     public void stepOne() {
