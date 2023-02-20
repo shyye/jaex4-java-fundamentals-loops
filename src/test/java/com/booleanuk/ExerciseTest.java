@@ -46,4 +46,15 @@ public class ExerciseTest {
         Assertions.assertEquals(false, this.exercise.stepFour(11));
     }
 
+    @Test
+    public void isAHobby() {
+        Assertions.assertEquals(true, this.exercise.stepFive("Fishing"));
+        Assertions.assertEquals(true, this.exercise.stepFive("Language Learning"));
+        Assertions.assertEquals(true, this.exercise.stepFive("Skydiving"));
+        Assertions.assertEquals(true, this.exercise.stepFive("Procrastinating"));
+
+        Assertions.assertEquals(false, this.exercise.stepFive("Singing"));
+        Assertions.assertEquals(false, this.exercise.stepFive("Dancing"));
+        Assertions.assertEquals(false, this.exercise.stepFive("Horse riding"));
+    }
 }

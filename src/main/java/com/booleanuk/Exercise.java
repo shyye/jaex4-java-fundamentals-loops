@@ -7,6 +7,8 @@ public class Exercise {
 
     public int[] favouriteNumbers = {1, 2, 4, 5, 7, 8, 10};
 
+    public String[] myHobbies = {"Fishing", "Language learning", "Skydiving", "Procrastinating"};
+
     public void stepOne() {
         // TODO: 1. Write a for loop that adds the numbers 0 to 3 to the numsZeroToThree array
     }
@@ -20,7 +22,12 @@ public class Exercise {
     }
 
     public boolean stepFour(int num) {
-        // TODO: 5. Write a for loop that checks if num is in the favouriteNumbers array
+        // TODO: 6. Write a for loop that checks if num is in the favouriteNumbers array
+        return false;
+    }
+
+    public boolean stepFive(String hobby) {
+        // TODO 5. Write a for loop that checks if the hobby String is in the myHobbies array
         return false;
     }
 }
