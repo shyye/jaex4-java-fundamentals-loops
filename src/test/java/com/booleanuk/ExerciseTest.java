@@ -24,8 +24,6 @@ public class ExerciseTest {
         Assertions.assertArrayEquals(shouldBe, this.exercise.numsFiveToTen);
     }
 
-
-
     @Test
     public void countdownShouldBeThreeToZero() {
         int[] shouldBe = {3, 2, 1, 0};
