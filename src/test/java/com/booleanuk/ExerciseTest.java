@@ -27,8 +27,23 @@ public class ExerciseTest {
     @Test
     public void countdownShouldBeThreeToZero() {
         int[] shouldBe = {3, 2, 1, 0};
-        this.exercise.stepFour();
+        this.exercise.stepThree();
         Assertions.assertArrayEquals(shouldBe, this.exercise.countdown);
+    }
+
+    @Test
+    public void isMyNumberAFavourite() {
+        Assertions.assertEquals(true, this.exercise.stepFour(1));
+        Assertions.assertEquals(true, this.exercise.stepFour(2));
+        Assertions.assertEquals(true, this.exercise.stepFour(4));
+        Assertions.assertEquals(true, this.exercise.stepFour(5));
+        Assertions.assertEquals(true, this.exercise.stepFour(7));
+        Assertions.assertEquals(true, this.exercise.stepFour(8));
+        Assertions.assertEquals(true, this.exercise.stepFour(10));
+
+        Assertions.assertEquals(false, this.exercise.stepFour(6));
+        Assertions.assertEquals(false, this.exercise.stepFour(3));
+        Assertions.assertEquals(false, this.exercise.stepFour(11));
     }
 
 }
