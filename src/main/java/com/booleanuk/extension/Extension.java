@@ -1,4 +1,4 @@
-package com.booleanuk;
+package com.booleanuk.extension;
 
 public class Extension {
     public int[] numsEven;

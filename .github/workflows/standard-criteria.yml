@@ -13,4 +13,4 @@ jobs:
       - name: Setup Gradle
         uses: gradle/gradle-build-action@v2
       - name: Run build with Gradle Wrapper
-        run: ./gradlew test --tests com.booleanuk.ExerciseTest
+        run: ./gradlew test --tests com.booleanuk.core.*

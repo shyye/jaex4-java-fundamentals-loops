@@ -1,4 +1,4 @@
-package com.booleanuk;
+package com.booleanuk.core;
 
 public class Exercise {
     public int[] numsZeroToThree;
