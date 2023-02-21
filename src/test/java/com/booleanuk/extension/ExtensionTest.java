@@ -1,6 +1,5 @@
 package com.booleanuk.extension;
 
-import com.booleanuk.extension.Extension;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
