@@ -4,9 +4,58 @@ import com.booleanuk.core.Exercise;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-class ExerciseTest {
+public class ExerciseTest {
+    Exercise exercise;
+
+    public ExerciseTest() {
+        this.exercise = new Exercise();
+    }
+
     @Test
-    public void shouldSayHelloWorld() {
-        Assertions.assertEquals("Hello, world!", Exercise.sayHelloWorld());
+    public void numsZeroToThreeShouldContainNumsZeroToThree() {
+        int[] shouldBe = {0, 1, 2, 3};
+        this.exercise.stepOne();
+        Assertions.assertArrayEquals(shouldBe, this.exercise.numsZeroToThree);
+    }
+
+    @Test
+    public void numsFiveToTenShouldContainNumsFiveToTen() {
+        int[] shouldBe = {5, 6, 7, 8, 9, 10};
+        this.exercise.stepTwo();
+        Assertions.assertArrayEquals(shouldBe, this.exercise.numsFiveToTen);
+    }
+
+    @Test
+    public void countdownShouldBeThreeToZero() {
+        int[] shouldBe = {3, 2, 1, 0};
+        this.exercise.stepThree();
+        Assertions.assertArrayEquals(shouldBe, this.exercise.countdown);
+    }
+
+    @Test
+    public void isMyNumberAFavourite() {
+        Assertions.assertEquals(true, this.exercise.stepFour(1));
+        Assertions.assertEquals(true, this.exercise.stepFour(2));
+        Assertions.assertEquals(true, this.exercise.stepFour(4));
+        Assertions.assertEquals(true, this.exercise.stepFour(5));
+        Assertions.assertEquals(true, this.exercise.stepFour(7));
+        Assertions.assertEquals(true, this.exercise.stepFour(8));
+        Assertions.assertEquals(true, this.exercise.stepFour(10));
+
+        Assertions.assertEquals(false, this.exercise.stepFour(6));
+        Assertions.assertEquals(false, this.exercise.stepFour(3));
+        Assertions.assertEquals(false, this.exercise.stepFour(11));
+    }
+
+    @Test
+    public void isAHobby() {
+        Assertions.assertEquals(true, this.exercise.stepFive("Fishing"));
+        Assertions.assertEquals(true, this.exercise.stepFive("Language Learning"));
+        Assertions.assertEquals(true, this.exercise.stepFive("Skydiving"));
+        Assertions.assertEquals(true, this.exercise.stepFive("Procrastinating"));
+
+        Assertions.assertEquals(false, this.exercise.stepFive("Singing"));
+        Assertions.assertEquals(false, this.exercise.stepFive("Dancing"));
+        Assertions.assertEquals(false, this.exercise.stepFive("Horse riding"));
     }
 }
