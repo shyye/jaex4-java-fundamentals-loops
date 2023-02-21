@@ -1,10 +1,7 @@
-# Java Exercise Template
-
-This template contains a `Sample` class and a `SampleTest` class. When making changes, ensure you change the project
-name in the [settings.gradle](./settings.gradle) file.
+# Java Loops
 
 ## Learning Objectives
-- Sample learning objective
+- Use loops to iterate over collections of data
 
 ## Set up instructions
 - Fork this repository and clone the forked version to your machine
