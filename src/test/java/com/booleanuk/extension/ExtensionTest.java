@@ -5,6 +5,10 @@ import org.junit.jupiter.api.Test;
 
 public class ExtensionTest {
     Extension extension;
+
+    public ExtensionTest() {
+        this.extension = new Extension();
+    }
     @Test
     public void numsEvenShouldContainBetweenZeroAndSix() {
         int[] shouldBe = {0, 2, 4, 6};
